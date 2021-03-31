@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Runs the ADDI data extractor to create a zip file with CSVs for ingestion into Cloud Transformation Insights.
+# The CSVs are placed in the directory specified in `conf/addiconf.py`
+
+PYTHONPATH=$PWD/conf:$PYTHONPATH python3 python/addi/addi_extract.py
