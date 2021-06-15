@@ -16,5 +16,14 @@ csv_output_directory = ""
 ## To run all sql files in the sql folder assign this to an empty list
 addi_sql_list=[]
 
+## PLEASE DONT EDIT THE PRE-PROCESS AND POST-PROCESS LIST
+preprocess_sql_list=['GetVarPreoutput.sql',
+                    'GetFinalProgName.sql',
+                    'GetCobolLocal.sql',
+                    'GetCobolCopy.sql',
+                    'GetPL1Local.sql',
+                    'GetPL1Copy.sql']
+postprocess_sql_list=[]
+
 ## To run only selected sql files, uncomment this line and put them in the list.
 # addi_sql_list=[]
