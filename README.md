@@ -14,3 +14,13 @@ in the `sql` folder should be updated.
 ```
 ./scripts/extract_ad_data
 ```
+
+Specific to CPPS application: to convert the application names using naming conventions used in the applications
+```
+./scripts/cpps_apps_split <list-of-files-to-be-processed>
+```
+Wild cards for the list also work. Files will be changed in place and original files would be saved with a .bak extension.
+
+# ADDI configuration
+## Security settings for each relevant project DB:
+1. In the Security->logins-><username> go to UserMapping, and for the relevant project DB enable db_owner role
