@@ -2,9 +2,9 @@ import csv
 import pymssql
 import pandas as pd
 from time import time
-from addiconf import addi_repository_list, csv_output_directory
-from settings import addi_sql_list, preprocess_sql_list, postprocess_sql_list
-from settings import preprocess_directory, sql_file_directory, postprocess_directory
+from conf.addiconf import addi_repository_list, csv_output_directory
+from python.addi.settings import addi_sql_list, preprocess_sql_list, postprocess_sql_list
+from python.addi.settings import preprocess_directory, sql_file_directory, postprocess_directory
 
 def run_sqls(sql_list,repo_list,csv_dir,sql_directory,mode) :
 

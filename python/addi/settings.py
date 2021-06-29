@@ -8,7 +8,7 @@ disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
 """
 
 import os
-from addiconf import addi_sql_list,preprocess_sql_list,postprocess_sql_list
+from conf.addiconf import addi_sql_list,preprocess_sql_list,postprocess_sql_list
 
 # Specify directory to find .sql file(s)
 sql_file_directory = os.path.dirname(os.path.realpath(__file__))+"/../../sql"
